@@ -8,6 +8,7 @@ body{
     width: 100%;
     justify-content: space-between;
     background-color: rgb(38,38,38);
+    
 }
 #navbar>div:first-child>img{
     height: 42%;
@@ -56,4 +57,22 @@ input{
     width: 150px;
     background-color: rgb(31,135,240);
     color: whitesmoke;
+}
+
+
+/* ////css for signup login sub div */
+
+#gemen{
+    position: relative;
+
+}
+
+#sub_di{
+    position: absolute;
+    
+}
+
+#gemen .show{
+    display: block;
+    display: flex;
 }
