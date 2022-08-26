@@ -28,12 +28,12 @@ body{
     height: 500px;
     position: absolute;
     background: rgba(0,0,0,0.8);
-    backdrop-filter: saturate(10%) blur(10px);
-    -webkit-filter: blur(5px);
- -moz-filter: blur(5px);
- -o-filter: blur(5px);
- -ms-filter: blur(5px);
- filter: blur(2px);
+   backdrop-filter: saturate(10%) blur(10px);
+   -webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(2px);
 
 }
 
@@ -61,6 +61,7 @@ input{
 #guests{
     padding: 10px;
     margin-left: 0px;   
+
 }
 #searchbutton{
     padding: 10px;
@@ -68,7 +69,7 @@ input{
     background-color: rgb(31,135,240);
     color: whitesmoke;
 }
-location{
+#location{
     width: 250px;
 }
 #slider{
@@ -96,3 +97,4 @@ location{
     display: block;
     display: flex;
 }
+

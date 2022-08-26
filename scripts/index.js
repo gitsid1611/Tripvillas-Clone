@@ -1,3 +1,4 @@
+
 import {navbar, svg, getSign_upDiv,getLogin_Div, log_cancel ,sign_up_cancel ,log_inst ,signup_inst ,login_email ,login_num,sign} from "../components/navbar.js";
 document.getElementById("navbar").innerHTML = navbar();
 
@@ -17,7 +18,6 @@ login_email()    ////////////////////  login with email from login email
 login_num()      /////////////////// login with number from login number  
 
 sign()          ////////////////////  getting sign-up data
-
 
 
 let sliderData = [
