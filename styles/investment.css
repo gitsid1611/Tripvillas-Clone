@@ -2,6 +2,46 @@
     margin: 0%;
     padding: 0%;
 }
+#navbar{
+    /* border: 1px solid #000; */
+    /* height: 40px; */
+    position: sticky;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#navbar img{
+    margin-top: 5px;
+}
+#nav {
+    display: flex;
+    gap: 10px;
+    margin-left: 76%;
+    margin-top: -2%;
+    font-size: 1.1rem;
+    
+}
+#nav p:hover{
+color:  rgb(48, 187, 177);
+}
+#nav p a{
+    color: rgb(71, 68, 68);
+    text-decoration: none;
+}
+#host {
+    background-color: rgb(217, 83, 79);
+    color: #fff;
+    border-radius: 5px;
+    /* margin-left: 95%; */
+    text-decoration: none;
+    padding: 0px 26px 0px 26px;
+    border: none;
+
+}
+#host:hover{
+    border-radius: 15px;
+    background-color: rgb(224, 45, 39);
+}
+/* ------------------------------------------------------------------------------ */
 .h1{
     width: 80%;
     /* border: 2px solid #000; */
@@ -231,6 +271,9 @@ label{
 #links{
     color: #fff;
     font-size: 1rem;
+    line-height: 15px;
+    text-align: left;
+    margin-left: 35%;
     /* width: 40%;
     border: 2px solid yellow; */
     
@@ -250,6 +293,7 @@ label{
     color: rgb(45, 169, 149);
     font-size: 2.5rem;
 }
+
 .bttn{
     margin-right: 140px;
     margin-top: 2%;
@@ -295,4 +339,8 @@ label{
    -webkit-filter: blur(8px);
   color: gray;
   font-size: 1.4rem;
+}
+.btn1 button:hover{
+    background-color: rgb(241, 167, 64);
+    border-radius: 15px;
 }
