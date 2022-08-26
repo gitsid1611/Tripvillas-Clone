@@ -25,14 +25,14 @@ body{
 #searchbar>div>img{
     width: 100%;
     height: 500px;
-    position: absolute;
+    position: relative;
     background: rgba(0,0,0,0.8);
-   backdrop-filter: saturate(10%) blur(10px);
-   -webkit-filter: blur(5px);
--moz-filter: blur(5px);
--o-filter: blur(5px);
--ms-filter: blur(5px);
-filter: blur(2px);
+    backdrop-filter: saturate(10%) blur(10px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+   -o-filter: blur(5px);
+   -ms-filter: blur(5px);
+   filter: blur(2px);
   
 }
 
@@ -71,13 +71,13 @@ input{
     width: 250px;
 }
 #slider{
-    position: relative;
-    top: 75%;
+    /* position: absolute; */
+    top: 90%;
 }
 #slides{
     display: flex;
     gap: 50px;
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 #slides>div:first-child{
@@ -102,9 +102,153 @@ input{
     width: 20%;
 }
 #slides>div>img{
-    height: 100px;
+    height: 150px;
     width: 200px;
 }
 #forward{
     cursor: pointer;
+    font-size: 36px;
+ 
+}
+#backward{
+    cursor: pointer;
+    font-size: 36px;
+}
+#middle{
+    display: flex; 
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+
+#sliderh3{
+    margin-left: 140px;
+    color: rgb(193,193,193);
+}
+#centerone{
+    width: 30%;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 300px;
+    margin-top: 20px;
+    
+}
+#centertwo{
+    width: 60%;
+}
+#centerone>div>div>img{
+    width: 50px;
+    height: 50px;
+}
+#centerone>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#services{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+#h3center{
+    text-align: center;
+    color: rgb(193,193,193);
+}
+.centertag{
+    color: rgb(110,110,110);
+}
+#centertwo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 80px;
+    margin-top: 20px;
+    
+}
+
+.centerimg{
+ width: 200px;
+ height: 150px;
+ background: rgba(0,0,0,0.8);
+ backdrop-filter: saturate(10%) blur(10px);
+ -webkit-filter: blur(5px);
+ -moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(2px);
+
+}
+.centerdiv{
+    position: absolute;
+}
+.place{
+    position: relative;
+    top: 10%;
+    left: 30%;
+    color: rgb(255,255,255);
+}
+.city{
+    position: relative;
+    top: 7%;
+    left: 30%;
+    color: rgb(255,255,255);
+}
+#investment{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#investment>div:last-child{
+    width: 48%;
+    margin-right: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 250px;
+}
+#investment>div:first-child{
+    width: 48%;
+    margin-left: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 250px;
+}
+#investment>div>div{
+    margin-left: 10px;
+}
+#investment>div>div:last-child{
+    text-align: center;
+}
+#investdiv{
+  display: flex;
+  
+}
+#userdiv{
+    display: flex; 
+}
+#userdiv>div>img{
+    width: 50px;
+    height: 50px;
+}
+#investment button{
+   padding: 10px;
+   background-color: rgb(28,135,239);
+   color: rgb(250,253,254);
+   border: none;
+}
+#investment h3{
+    color: rgb(107,107,107);
+    text-align: center;
+}
+#investment p{
+    color: rgb(107,107,107);
+}
+#investdiv>div>img{
+    width: 50px;
+    height: 50px;
+}
+#investdiv>div{
+    text-align: center;
+}
+#userdiv>div{
+    text-align: center;
 }
