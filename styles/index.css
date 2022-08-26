@@ -9,6 +9,7 @@ body{
     width: 100%;
     justify-content: space-between;
     background-color: rgb(38,38,38);
+    
 }
 #navbar>div:first-child>img{
     height: 42%;
@@ -33,7 +34,7 @@ body{
 -o-filter: blur(5px);
 -ms-filter: blur(5px);
 filter: blur(2px);
-  
+
 }
 
 #searchbar>div:last-child{
@@ -42,7 +43,7 @@ filter: blur(2px);
     color: rgb(255,255,255);
     left: 20%;
     font-family: ProximaNovaLight, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    
+
 }
 
 input{
@@ -59,7 +60,8 @@ input{
 }
 #guests{
     padding: 10px;
-    margin-left: 0px;
+    margin-left: 0px;   
+
 }
 #searchbutton{
     padding: 10px;
@@ -77,3 +79,22 @@ input{
 #slides{
     display: flex;
 }
+
+
+/* ////css for signup login sub div */
+
+#gemen{
+    position: relative;
+
+}
+
+#sub_di{
+    position: absolute;
+    
+}
+
+#gemen .show{
+    display: block;
+    display: flex;
+}
+
