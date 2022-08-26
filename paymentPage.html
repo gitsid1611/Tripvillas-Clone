@@ -132,18 +132,18 @@
 
 
 <script>
-   var cartamount = JSON.parse(localStorage.getItem("sachindata"));
+   var cartamount = JSON.parse(localStorage.getItem("DevData"));
    document.querySelector("#totalamount1").innerHTML += cartamount;
    document.querySelector("#totalamount2").innerHTML += cartamount;
    
     
    function myFunction(){
        event.preventDefault();
-       window.location.href="paymentsuccess.html";
+       window.location.href="successful.html";
    };
    function myFunction2(){
        event.preventDefault();
-       window.location.href="paymentfailed.html";
+       window.location.href="failuer.html";
    };
 
   
