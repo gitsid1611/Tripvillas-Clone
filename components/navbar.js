@@ -148,7 +148,7 @@ function sign(){
        }
        else
        {
-            if(log.length <=1)
+            if(log.length <=0)
             {
                 log.push(obj);
                 console.log(log);
@@ -182,7 +182,7 @@ function sign(){
 
                 document.getElementById("gem").innerHTML=""
         
-                document.getElementById("gem").innerText = log[0].f_name
+                document.getElementById("gemen").innerText = log[0].f_name
 
             })
 
