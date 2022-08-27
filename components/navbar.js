@@ -37,7 +37,7 @@ function navbar(){
 }
 
 function svg(){
-    document.getElementById("gemen").addEventListener("click", () =>{
+    document.getElementById("gem").addEventListener("click", () =>{
         document.getElementById("sub_di").style.display ="block";
         document.getElementById("sign_cont").style.display ="none"
         document.getElementById("login_cont").style.display="none"
@@ -74,6 +74,15 @@ function log_cancel(){
         document.getElementById("sign_cont").style.display ="none"
         document.getElementById("sub_di").style.display="none"
         document.getElementById("login_cont").style.display="none"
+        document.getElementById("login_email").style.display="none"
+    })
+
+    document.getElementById("cancel_login_email").addEventListener("click" ,() =>{
+        document.getElementById("sign_cont").style.display ="none"
+        document.getElementById("sub_di").style.display="none"
+        document.getElementById("login_cont").style.display="none"
+        document.getElementById("login_email").style.display="none"
+
     })
 }
 
@@ -83,6 +92,7 @@ function sign_up_cancel(){
         document.getElementById("sign_cont").style.display ="none"
         document.getElementById("sub_di").style.display="none"
         document.getElementById("login_cont").style.display="none"
+        document.getElementById("login_email").style.display="none"
     })
 
 }
@@ -101,6 +111,11 @@ function signup_inst(){
         document.getElementById("login_cont").style.display="none"
         document.getElementById("sign_cont").style.display ="block"
 
+    })
+
+    document.getElementById("log_sing_email").addEventListener("click" , () =>{
+        document.getElementById("login_email").style.display="none"
+        document.getElementById("sign_cont").style.display ="block"
     })
 
 }
@@ -125,10 +140,11 @@ function login_num(){
 function sign(){
     //  event.preventDefault();
 
-    var log = JSON.parse(localStorage.getItem("userdata")) || []
+    let log = JSON.parse(localStorage.getItem("userdata")) || []
 
-    var user = JSON.parse(localStorage.getItem(user))  || []
+    let user = JSON.parse(localStorage.getItem("user"))  || []
 
+        
     document.getElementById("regist").addEventListener("click", () =>{
         var obj={
 
@@ -148,7 +164,7 @@ function sign(){
        }
        else
        {
-            if(log.length <=0)
+            if(log.length <=1)
             {
                 log.push(obj);
                 console.log(log);
@@ -156,26 +172,60 @@ function sign(){
                 var z=1234
                 alert(`Please Use This OTP For Sign-Up ${1234}`)
         
-                document.getElementById("sign_cont").style.display = "none";
+                // document.getElementById("sign_cont").style.display = "none";
 
-                document.getElementById("gem").innerHTML=""
+                document.getElementById("gemen").innerText = log[0].f_name;
         
-                var z=document.getElementById("gem").innerText;
+                
 
-                z=log[0].f_name
+                console.log(log[0].f_name)
 
-                // document.getElementById("sub_di").style.display="none"
+                window.location.reload();
 
-            //     if(z=log[0].f_name){
+                document.getElementById("sign_cont").style.display = "none"
 
-            //     document.getElementById("gem").addEventListener("click",()=>{
-            //         document.getElementById("sub_d").style.display = "block"
-            //     })
-            //    }
             }
 
+        }
+    })
 
-            // 
+    document.getElementById("gem").innerText = log[0].f_name;
+
+    
+
+    var z= log[0].f_name;
+
+  
+
+
+
+   var b = document.getElementById("gem").innerText
+    
+
+     b= log[0].f_name
+
+          if(log[0].f_name== document.getElementById("gem").innerText)
+          {
+            document.getElementById("sign_cont").style.display ="none"
+            document.getElementById("sub_di").style.display="none"
+            document.getElementById("login_cont").style.display="none"
+            document.getElementById("login_email").style.display="none"
+
+            document.getElementById("gem").addEventListener("click" , () =>{
+                document.getElementById("sub_di").style.display = "none"
+                document.getElementById("sub_d").style.display  = "block"
+            })
+          }
+
+
+
+
+
+
+
+
+
+
 
             document.getElementById("log_otp").addEventListener("click" , () =>{
                 alert(`Please Use This OTP for login ${1234}`)
@@ -225,10 +275,8 @@ function sign(){
                   }
                }
             })
-      }
-    })
+     
     
-
 
 
 }
