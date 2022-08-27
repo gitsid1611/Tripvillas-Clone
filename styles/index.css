@@ -9,6 +9,7 @@ body{
     width: 100%;
     justify-content: space-between;
     background-color: rgb(38,38,38);
+    
 }
 #navbar>div:first-child>img{
     height: 42%;
@@ -27,13 +28,13 @@ body{
     height: 500px;
     position: relative;
     background: rgba(0,0,0,0.8);
-    backdrop-filter: saturate(10%) blur(10px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-   -o-filter: blur(5px);
-   -ms-filter: blur(5px);
-   filter: blur(2px);
-  
+
+   backdrop-filter: saturate(10%) blur(10px);
+   -webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(2px);
 }
 
 #searchbar>div:last-child{
@@ -42,7 +43,7 @@ body{
     color: rgb(255,255,255);
     left: 20%;
     font-family: ProximaNovaLight, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    
+
 }
 
 input{
@@ -59,7 +60,8 @@ input{
 }
 #guests{
     padding: 10px;
-    margin-left: 0px;
+    margin-left: 0px;   
+
 }
 #searchbutton{
     padding: 10px;
@@ -183,6 +185,7 @@ filter: blur(2px);
 }
 #investment{
     display: flex;
+
     width: 100%;
     gap: 20px;
     justify-content: space-between;
@@ -332,3 +335,25 @@ hr{
     font-size: 10px;
     text-align: center;
 }
+
+}
+
+
+/* ////css for signup login sub div */
+
+#gemen{
+    position: relative;
+
+}
+
+#sub_di{
+    position: absolute;
+    
+}
+
+#gemen .show{
+    display: block;
+    display: flex;
+}
+
+
