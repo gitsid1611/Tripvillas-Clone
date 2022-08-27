@@ -97,5 +97,7 @@ let addData =(el) =>{
 
     localStorage.setItem("checkout",JSON.stringify(arr))
 
+    window.location.href ="cartPage.html"
+
 
 }
