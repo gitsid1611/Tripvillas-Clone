@@ -1,5 +1,5 @@
 
-import {navbar, svg, getSign_upDiv,getLogin_Div, log_cancel ,sign_up_cancel ,log_inst ,signup_inst ,login_email ,login_num,sign} from "../components/navbar.js";
+import {navbar, svg, getSign_upDiv,getLogin_Div, log_cancel ,sign_up_cancel ,log_inst ,signup_inst ,login_email ,login_num,sign,xyz} from "../components/navbar.js";
 document.getElementById("navbar").innerHTML = navbar();
 
 svg()   /////////////////// for sub_div od login & sign up
@@ -18,7 +18,7 @@ login_email()    ////////////////////  login with email from login email
 login_num()      /////////////////// login with number from login number  
 
 sign()          ////////////////////  getting sign-up data
-
+xyz()
 
 let sliderData = [
     {place:"Goa" , type:"Vacation Rentals", image:"https://media.istockphoto.com/photos/india-goa-palolem-beach-picture-id535168027?k=20&m=535168027&s=612x612&w=0&h=L4IxMIBa6jpWytr_L9eKFwCz5Iqehlgvpmnxz1JMuC0="},
@@ -36,12 +36,12 @@ let sliderData = [
 
 let data=0
 
-for(let i=0;i<5;i++)
-{
-    document.getElementById(`img${i}`).src =sliderData[i].image
-    document.getElementById(`place${i}`).innerText=sliderData[i].place
+// for(let i=0;i<5;i++)
+// {
+//     document.getElementById(`img${i}`).src =sliderData[i].image
+//     document.getElementById(`place${i}`).innerText=sliderData[i].place
   
-}
+// }
 
 
 
@@ -52,12 +52,13 @@ let bottomslider = [
     {title:"Bali Family Vibes",image:"https://images.unsplash.com/photo-1553902000-e036b7d05af5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"},
     {title:"Sri Lanka - Rural solitude and luxury combined",image:"https://images.unsplash.com/photo-1491497895121-1334fc14d8c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHNyaSUyMGxhbmthfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"},
 ]
-for(let i=0;i<5;i++)
-{
-    document.getElementById(`simg${i}`).src =bottomslider[i].image
-    document.getElementById(`bottomp${i}`).innerText=bottomslider[i].title
+
+// for(let i=0;i<5;i++)
+// {
+//     document.getElementById(`simg${i}`).src =bottomslider[i].image
+//     document.getElementById(`bottomp${i}`).innerText=bottomslider[i].title
   
-}
+// }
 
 let asia = [
     {country:"India",destinations:"3262 holiday homes"},
@@ -210,3 +211,38 @@ document.getElementById("northamerica").addEventListener("click",namerica)
 document.getElementById("southamerica").addEventListener("click",samerica)
 document.getElementById("africa").addEventListener("click",africas)
 document.getElementById("oceania").addEventListener("click",onceanias)
+
+document.getElementById("midc1").addEventListener("click",()=>{
+    window.location.href ="./hotellanding.html"
+})
+document.getElementById("midc2").addEventListener("click",()=>{
+    window.location.href ="./hotellanding.html"
+})
+document.getElementById("midc3").addEventListener("click",()=>{
+    window.location.href ="./hotellanding.html"
+})
+document.getElementById("midc4").addEventListener("click",()=>{
+    window.location.href ="./hotellanding.html"
+})
+document.getElementById("midc5").addEventListener("click",()=>{
+    window.location.href ="./hotellanding.html"
+})
+for(let i =1;i<=9;i++)
+{
+    document.getElementById(`centerdiv${i}`).addEventListener("click",()=>{
+        window.location.href ="./hotellanding.html"
+    }) 
+}
+for(let i =1;i<=5;i++)
+{
+    document.getElementById(`bottomc${i}`).addEventListener("click",()=>{
+        window.location.href ="./hotellanding.html"
+    }) 
+}
+for(let i =1;i<=2;i++)
+{
+    document.getElementById(`btn${i}`).addEventListener("click",()=>{
+        window.location.href ="./investment.html"
+    }) 
+}
+

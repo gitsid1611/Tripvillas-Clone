@@ -46,6 +46,7 @@
     text-decoration: none;
     color: #1e87f0;
     /* margin-top: 30px; */
+    cursor: pointer;
 
 }
 hr{
@@ -185,4 +186,8 @@ button{
 
 #gem{
     color: white;
+    cursor: pointer;
+}
+#hty{
+    cursor: pointer;
 }

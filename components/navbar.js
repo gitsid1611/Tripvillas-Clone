@@ -1,5 +1,5 @@
 function navbar(){
-    return `  <div><img src="https://d2v8elt324ukrb.cloudfront.net/static/riotuikit/images/logo.c72056a22f91.png" alt=""></div>
+    return `  <div id="hty"><img src="https://d2v8elt324ukrb.cloudfront.net/static/riotuikit/images/logo.c72056a22f91.png" alt=""></div>
     <div>
         <div id=gem>
 
@@ -34,6 +34,11 @@ function navbar(){
         <svg width="20" height="15" stroke="rgb(255,255,255)" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="triangle-down"><polygon points="5 7 15 7 10 12"></polygon></svg>
         <svg width="20" height="20" stroke="rgb(255,255,255)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg>
     </div>`
+}
+function xyz(){
+    document.getElementById("hty").addEventListener("click",()=>{
+        window.location.href="./index.html"
+    })
 }
 
 function svg(){
@@ -282,4 +287,4 @@ function sign(){
 }
 
 
-export {navbar, svg, getSign_upDiv ,getLogin_Div, log_cancel,sign_up_cancel ,log_inst ,signup_inst ,login_email ,login_num,sign};
+export {navbar, svg, getSign_upDiv ,getLogin_Div, log_cancel,sign_up_cancel ,log_inst ,signup_inst ,login_email ,login_num,sign,xyz};

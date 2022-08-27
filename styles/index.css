@@ -72,7 +72,17 @@ input{
 #location{
     width: 250px;
 }
+#slider{
+    margin-top: 50px;
+}
+#investment{
+    margin-top: 100px;
 
+}
+#middle{
+    margin-top: 50px;
+    height: 650px;
+}
 #slides{
     display: flex;
     gap: 50px;
@@ -152,7 +162,9 @@ input{
     margin-top: 20px;
     
 }
-
+.midc{
+    cursor: pointer;
+}
 .centerimg{
  width: 200px;
  height: 150px;
@@ -336,7 +348,7 @@ hr{
     text-align: center;
 }
 
-}
+
 
 
 /* ////css for signup login sub div */
