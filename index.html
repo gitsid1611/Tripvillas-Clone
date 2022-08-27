@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tripvillas | Book vacation</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 <body>
 <div id="simba">
@@ -81,13 +82,13 @@
     <div id="slider">
          <h3 id="sliderh3">Top Destinations</h3>
          <div id="slides">
-            <div> <h1 id="backward"><</h1></div>
-            <div><img id="img0" src="" alt=""><p id="place0"></p></div>
-            <div><img src="" id="img1" alt=""><p id="place1"></p></div>
-            <div><img src="" id="img2" alt=""><p id="place2"></p></div>
-            <div><img src="" id="img3" alt=""><p id="place3"></p></div>
-            <div><img src="" id="img4" alt=""><p id="place4"></p></div>
-            <div><h1 id="forward">></h1></div>
+            <div style="display:flex ; justify-content: center; align-items: center;"> <i class="fa-solid fa-angle-left"></i></div>
+            <div class="midc"><img id="img0" src="" alt=""><p id="place0"></p></div>
+            <div class="midc"><img src="" id="img1" alt=""><p id="place1"></p></div>
+            <div class="midc"><img src="" id="img2" alt=""><p id="place2"></p></div>
+            <div class="midc"><img src="" id="img3" alt=""><p id="place3"></p></div>
+            <div class="midc"><img src="" id="img4" alt=""><p id="place4"></p></div>
+            <div style="display:flex ; justify-content: center; align-items: center;"><i class="fa-solid fa-angle-right"></i></div>
          </div>
     </div>
     <div id="middle"> 
@@ -258,6 +259,45 @@
         </div>
     </div>
 </div>
+
+<div id="bottoms">
+    <h3 id="h3">Vacation Ideas</h3>
+    <div id="bottomslider">
+    <div style="display:flex ; justify-content: center; align-items: center;"><i class="fa-solid fa-angle-left"></i></div>
+    <div class="bottomc">
+    <div><img src="" id="simg0" class="bottomimg"  alt=""></div>
+    <div><p id="bottomp0" class="bottomp"></p></div>
+    </div>
+    <div class="bottomc">
+        <div class="bottomimg"><img id="simg1"  src="" alt=""></div>
+        <div class="bottomp"><p id="bottomp1" ></p></div>
+    </div>
+    <div class="bottomc">
+        <div class="bottomimg"><img id="simg2"  src="" alt=""></div>
+        <div class="bottomp"><p id="bottomp2" ></p></div>
+    </div>
+    <div class="bottomc">
+        <div class="bottomimg"><img id="simg3" src="" alt=""></div>
+        <div class="bottomp"><p id="bottomp3" ></p></div>
+    </div>
+    <div class="bottomc">
+        <div class="bottomimg"><img id="simg4"  src="" alt=""></div>
+        <div class="bottomp"><p id="bottomp4" ></p></div>
+    </div>
+    <div style="display:flex ; justify-content: center; align-items: center;"><i class="fa-solid fa-angle-right"></i></div>
+</div>
+</div>
+<h2 id="h3last">Holiday Homes Across The Globe</h2>
+<div id="lower">
+    <div><p id="asia" class="coutnries">ASIA</p></div>
+    <div><p id="europe" class="coutnries">EUROPE</p></div>
+    <div><p id="northamerica" class="coutnries">NORTH AMERICA</p></div>
+    <div><p id="southamerica" class="coutnries">SOUTH AMERICA</p></div>
+    <div><p id="africa" class="coutnries">AFRICA</p></div>
+    <div><p id="oceania" class="coutnries">OCEANIA</p></div>
+</div>
+<hr>
+<div id="container"></div>
 </body>
 </html>
 <script src="./scripts/index.js" type="module"></script>

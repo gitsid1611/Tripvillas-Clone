@@ -24,23 +24,170 @@ for(let i=0;i<5;i++)
   
 }
 
-document.getElementById("forward").addEventListener("click",forward)
-function forward(){
-    data++
 
-    let newnumber=data
-    
 
-    for(let i=0;i<5;i++)
-    {
-        console.log(data)
-        if(data>sliderData.length-1)
-        {
-            data = 0
-        } 
-        document.getElementById(`img${i}`).src =sliderData[i+data].image
-        document.getElementById(`place${i}`).innerText=sliderData[i+data].place
-        data++
-    }
-   data=newnumber
+let bottomslider = [
+    {image:"https://images.unsplash.com/photo-1560185797-06657da66ae6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGh1a2V0JTIwcG9vbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",title:"Phuket's Best Pool Ideas"},
+    {title:"Coorg homestays", image:"https://images.unsplash.com/flagged/photo-1592544858330-7ac10a0468e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29vcmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"},
+    {title:"Family Trip in Lonavala", image:"https://images.unsplash.com/photo-1585626687814-213dffcdb7bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGxvbmF2YWxhJTIwYnVuZ2Fsb3d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"},
+    {title:"Bali Family Vibes",image:"https://images.unsplash.com/photo-1553902000-e036b7d05af5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"},
+    {title:"Sri Lanka - Rural solitude and luxury combined",image:"https://images.unsplash.com/photo-1491497895121-1334fc14d8c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHNyaSUyMGxhbmthfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"},
+]
+for(let i=0;i<5;i++)
+{
+    document.getElementById(`simg${i}`).src =bottomslider[i].image
+    document.getElementById(`bottomp${i}`).innerText=bottomslider[i].title
+  
 }
+
+let asia = [
+    {country:"India",destinations:"3262 holiday homes"},
+    {country:"Thailand",destinations:"1284 holiday homes"},
+    {country:"Sri Lanka",destinations:"646 holiday homes"},
+    {country:"Indonesia",destinations:"622 holiday homes"},
+    {country:"Philippines",destinations:"378 holiday homes"},
+    {country:"United Arab Emirates",destinations:"146 holiday homes"},
+    {country:"Georgia",destinations:"102 holiday homes"},
+    {country:"Turkey",destinations:"70 holiday homes"},
+    {country:"Israel",destinations:"53 holiday homes"},
+    {country:"Malaysia",destinations:"49 holidat homes"},
+    {country:"Japan",destinations:"46 holiday homes"},
+    {country:"Viet Nam",destinations:"37 holiday homes"},
+    {country:"Cambodia",destinations:"26 holiday homes"},
+    {country:"Nepal",destinations:"22 holiday homes"},
+    {country:"Maldives",destinations:"19 holiday homes"},
+    {country:"Taiwan, Province Of China",destinations:"16 holiday homes"},
+    {country:"Hong Kong Special Administrative Regiona Of China",destinations:"12 holiday homes"},
+    {country:"Republic Of Korea",destinations:"12 holiday homes"},
+    {country:"Oman",destinations:"7 holiday homes"},
+    {country:"Bangladesh",destinations:"5 holiday homes"},
+]
+let europe = [
+    {country:"Croatia",destinations:"15594 holiday homes"},
+    {country:"Denmark",destinations:"14385 holiday homes"},
+    {country:"Italy",destinations:"9268 holiday homes"},
+    {country:"Spain",destinations:"4737 holiday homes"},
+    {country:"France",destinations:"3791 holiday homes"},
+    {country:"Switzerland",destinations:"2770 holiday homes"},
+    {country:"Finland",destinations:"2086 holiday homes"},
+    {country:"Germany",destinations:"1910 holiday homes"},
+    {country:"Hungary",destinations:"1260 holiday homes"},
+    {country:"Austria",destinations:"1193 holiday homes"},
+    {country:"Greece",destinations:"941 holiday homes"},
+    {country:"United Kingdom Of Great Britain And Northern Ireland",destinations:"899 holiday homes"},
+    {country:"Sweden",destinations:"677 holiday homes"},
+    {country:"Cyprus",destinations:"593 holiday homes"},
+    {country:"Czech Republic",destinations:"585 holiday homes"},
+    {country:"Portugal",destinations:"566 holiday homes"},
+    {country:"Norway",destinations:"513 holiday homes"},
+    {country:"Netherlands",destinations:"491 holiday homes"},
+    {country:"Poland",destinations:"308 holiday homes"},
+    {country:"Belgium",destinations:"270 holiday homes"},
+    {country:"Slovakia",destinations:"141 holiday homes"},
+    {country:"Slovenia",destinations:"119 holiday homes"},
+    {country:"Ireland",destinations:"68 holiday homes"},
+    {country:"Malta",destinations:"64 holiday homes"},
+    {country:"Bulgaria",destinations:"63 holiday homes"},
+    {country:"Ukraine",destinations:"47 holiday homes"},
+    {country:"Montenegro",destinations:"39 holiday homes"},
+    {country:"Albania",destinations:"34 holiday homes"},
+    {country:"Bosnia and herzegovina",destinations:"25 holiday homes"},
+    {country:"Romania",destinations:"17 holiday homes"},
+    {country:"Luxembourg",destinations:"12 holiday homes"},
+    {country:"Serbia",destinations:"7 holiday homes"},
+    {country:"Iceland",destinations:"6 holiday homes"},
+    {country:"Lithuania",destinations:"6 holiday homes"},
+    {country:"The Former yugoslav Republic Of Macedonia",destinations:"6 holiday homes"},
+    {country:"Andorra",destinations:"5 holiday homes"},
+
+]
+let northAmerica = [
+    {country:"United States Of America",destinations:"3017 holiday homes"},
+    {country:"Mexico",destinations:"569 holiday homes"},
+    {country:"Dominician Republic",destinations:"365 holiday homes"},
+    {country:"Cuba",destinations:"257 holiday homes"},
+    {country:"Cananda",destinations:"164 holiday homes"},
+    {country:"Costa Rica",destinations:"147 holiday homes"},
+    {country:"Jamaica",destinations:"115 holiday homes"},
+    {country:"Aruba",destinations:"37 holiday homes"},
+    {country:"Puerto Rico",destinations:"37 holiday homes"},
+    {country:"Saint Martin",destinations:"34 holiday homes"},
+    {country:"Sint Maarteen",destinations:"10 holiday homes"},
+    {country:"Belize",destinations:"9 holiday homes"},
+    {country:"Panama",destinations:"9 holiday homes"},
+    {country:"Curancao",destinations:"7 holiday homes"},
+    
+]
+let southAmerica = [
+    {country:"Colombia",destinations:"198 holiday homes"},
+    {country:"Chile",destinations:"44 holiday homes"},
+    {country:"Brazil",destinations:"39 holiday homes"},
+    {country:"Argentina",destinations:"28 holiday homes"},
+    {country:"Peru",destinations:"15 holiday homes"},
+    {country:"Ecuador",destinations:"7 holiday homes"},
+]
+let africa = [
+    {country:"Kenya",destinations:"613 holiday homes"},
+    {country:"South Africa",destinations:"277 holiday homes"},
+    {country:"Morocco",destinations:"197 holiday homes"},
+    {country:"Uganda",destinations:"194 holiday homes"},
+    {country:"Mauritius",destinations:"71 holiday homes"},
+    {country:"Tanzania",destinations:"70 holiday homes"},
+    {country:"Rwanda",destinations:"21 holiday homes"},
+    {country:"Burundi",destinations:"19 holiday homes"},
+    {country:"Madagascar",destinations:"14 holiday homes"},
+    {country:"Egypt",destinations:"12 holiday homes"},
+    {country:"Tunisia",destinations:"7 holiday homes"},
+    {country:"Seychelles",destinations:"5 holiday homes"},
+]
+let Oceania = [
+    {country:"Australia",destinations:"397 holiday homes"},
+    {country:"New Zealand",destinations:"48 holiday homes"},
+    {country:"French Polynesia",destinations:"18 holiday homes"},
+
+]
+
+function append(data){
+        let container = document.getElementById("container")
+        container.innerHTML=null;
+        data.forEach(({country,destinations})=>{
+         let coutries = document.createElement("h4")
+         coutries.innerText=country;
+         let destiny = document.createElement("p");
+         destiny.innerText=destinations;
+
+         let box = document.createElement("div")
+         box.append(coutries,destiny)
+         container.append(box)
+        })
+    }
+append(asia)
+function europian(){
+    append(europe)
+    
+}
+function asias(){
+    append(asia)
+    
+}
+function namerica(){
+    append(northAmerica)
+    
+}
+function samerica(){
+    append(southAmerica)
+    
+}
+function africas(){
+    append(africa)
+    
+}
+function onceanias(){
+    append(Oceania)
+}
+document.getElementById("europe").addEventListener("click",europian)
+document.getElementById("asia").addEventListener("click",asias)
+document.getElementById("northamerica").addEventListener("click",namerica)
+document.getElementById("southamerica").addEventListener("click",samerica)
+document.getElementById("africa").addEventListener("click",africas)
+document.getElementById("oceania").addEventListener("click",onceanias)
