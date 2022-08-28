@@ -72,6 +72,13 @@
 </style>
   </head>
   <body>
+                                    <!-------------- HEADER ----------------->
+    <div id="container">
+
+    </div>
+
+                                    <!---------- BODY --------------->
+
 
     <div id="cartInNav">
         <div id="CartPage">
@@ -158,15 +165,26 @@
             <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/16077992/51ec251f54d611ec8f4f0a5f3ca25ae5_watermarked_image_1024.jpeg" alt="">
         </div>
       
-      </div>
-    
+    </div>
+
+                                <!-------- FOOTER SECTION -------->
+    <div id="footer">
+
+    </div>
+
+
   </body>
 </html>
+
+
 
 <script src="./cartPage.js" type="module"></script>
 
 
 <script>
+import navbar from "../components/navbar.js";
+
+document.getElementById("container").innerHTML= navbar();
 
 
 </script>
