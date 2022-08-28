@@ -1,14 +1,16 @@
-import {cartButton} from "./components/deba.js";
+// import {cartButton} from "./components/deba.js";
 
 
-document.getElementById("CartSection").innerHTML = cartButton();
+// document.getElementById("CartSection").innerHTML = cartButton();
 
-document.getElementById("CartSection").addEventListener("click", clickedCart);
+// document.getElementById("CartSection").addEventListener("click", clickedCart);
 
 // console.log(cartButton())
 // cartButton();
 
-// /_-----------------------__Cart PAge JS _----------------///
+
+
+// /_-----------------------__Caart PAge JS _----------------///
 
 var CartloginBtn = document.querySelector("#CartPage");
 
@@ -88,7 +90,7 @@ function CartPartClose() {
 // Cart-------------COMPLETED---------------------------items-------------------------
 
 
-var cartLic = JSON.parse(localStorage.getItem("CartDetails"));
+// var cartLic = JSON.parse(localStorage.getItem("CartDetails"))||[];
 
 var cont = document.querySelector("#lef");
 var total = document.querySelector("#total");
@@ -101,7 +103,7 @@ var sum = 0;
 var n = cartLic.length;
 var c = 0;
 
-displayData(cartLic);
+// displayData(cartLic);
 
 function displayData(data) {
   data.forEach(function (el, index) {
@@ -190,8 +192,9 @@ form.addEventListener("submit", function (event) {
     total.innerText = sum;
   }
 });
-document.getElementById("proceedto_checkout").addEventListener("click", submitFunc);
+document.getElementById("btn123").addEventListener("click", ()=>{
+    // alert("have some alret off")
+    window.location.href = "./paymentPage.html";
+});
 
-function submitFunc() {
-  window.location.href = "./paymentPage.html";
-};
+
